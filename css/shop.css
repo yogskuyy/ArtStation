@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("Asset/shop.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sales {
+  margin-bottom: 20px;/* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .sales {
+    margin-top: 20px;
+  }
+  
+  #toggle-sales {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #sales-table {
+    width: 100%;
+  }
+  
+  #sales-table th{
+    color: #fff;
+  }
+  #sales-table th,
+  #sales-table td {
+    padding: px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #sales-table th {
+    background-color: #19376D;
+    width:auto;
+  }
+  .edit-btn,
+  .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .edit-btn{
+    background-color: #36f462;
+    margin-right: 5px;
+  }
+}
+
+.sales h2 {
+  margin-bottom: 10px;
+}
+
+#sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#sales-table th, #sales-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#sales-table th {
+  background-color: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Container */
+.conten {
+  display: flex;
+  height: 15vh;
+}
+
+/* Tombol garis tiga */
+.sidebar-toggle {
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+  font-size: 40px;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  float: right;
+  position: fixed;
+  color: #fff;
+  z-index: 99999;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px); /* Menyembunyikan sidebar */
+  top: 70px;
+  left: 0px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 99998;
+}
+
+/* Daftar di sidebar */
+.sidebar ul {
+  margin-left: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Gaya tautan di sidebar */
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Warna hover pada tautan */
+.sidebar a:hover {
+  background-color: #0B2447;
+}
+
+/* Konten utama */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+  /* Mengatur sidebar agar terbuka saat tombol ditekan */
+  .sidebar.open {
+      transform: translateX(0);
+      background-color: #19376D;
+  }

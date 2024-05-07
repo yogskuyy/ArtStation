@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Logstyles.css">
+  <style>
+    body {
+      background-image: url("Asset/lake.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+    <nav class="menu-container">
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle menu" />
+        <label for="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <a href="#" class="menu-logo">
+            <img src="Asset/logo.png" alt="Logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="TUGAS2.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div class="container">
+        <form action="#" class="log-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>If you don't have an account, please <a href="Register.html">register</a>.</p>
+        </form>
+    </div>
+</body>
+</html>
