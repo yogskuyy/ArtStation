@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ArtStation-Home</title>
   <link rel="stylesheet" href="css/dbstyle.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <nav class="menu-container">
-    <input type="checkbox" aria-label="Toggle menu" />
-    <img src="Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px"/>
-    <div class="menu">
+    <div class="logo">
+      <img src="Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px"/>
+      <input type="checkbox" id="menu-btn">
+      <label for="menu-btn">
+        <i class="material-icons large-icon">&#xe5d2;</i>
+      </label>
+    </div>
+    <div class="menu" id="menu">
       <ul>
         <li><a href="TUGAS2.html">Home</a></li>
         <li><a href="#profile">Shop</a></li>
         <li><a href="#profile">Profile</a></li>
-        <li><a href="shop.html">Admin</a></li>
+        <li><a href="admin/DashboardAdmin.php">Admin</a></li>
         <li class="login"><a id="login-btn">Login</a></li>
       </ul>
     </div>
@@ -139,7 +145,7 @@
   </footer>
   <div class="popup" id="login-popup">
     <div class="popup-content">
-        <form action="login_proses.php" class="log-form" method="post">
+        <form action="masuk-proses.php" class="log-form" method="post">
             <h2>Login</h2>
             <div class="input-group">
                 <input id = "email" name = "email" type="email" placeholder="Email" required>
@@ -147,13 +153,13 @@
             <div class="input-group">
                 <input id = "password" name = "password" type="password" placeholder="Password" required>
             </div>
-            <button type="submit">Login</button>
-            <p>If you don't have an account, please <a href="Register.html">register</a>.</p>
+            <button type="submit" name="login">Login</button>
+            <p>If you don't have an account, please <a href="Register.php">register</a>.</p>
         </form>
         <button class="popup-close" onclick="closePopup()">X</button>
     </div>
 </div>
-<div class="popup">
+<!-- <div class="popup">
   <form action="#" class="register-form">
     <h2>Register</h2>
     <div class="input-group">
@@ -164,13 +170,7 @@
     </div>
     <button type="submit">Register</button>
     </form>
-</div>
-
-  <script src="js/home.js"></script>
-  <script>
-    function toggleSidebar() {
-      document.querySelector('.sidebar').classList.toggle('active');
-    }
-  </script>
+</div> -->
+<script src="js/home.js"></script>
 </body>
 </html>

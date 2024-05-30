@@ -37,30 +37,37 @@ document.addEventListener("DOMContentLoaded", function() {
   showSlide(currentIndex);
 });
 
+const menu = document.getElementById('menu');
+const btn = document.getElementById('menu-btn');
 const loginBtn = document.getElementById('login-btn');
 const popup = document.getElementById('login-popup');
 const overlay = document.createElement('div');
 
-
 overlay.classList.add('overlay');
-
-
 document.body.appendChild(overlay);
-
 
 function openPopup() {
     popup.style.display = 'block';
     overlay.style.display = 'block';
 }
-
-
 function closePopup() {
     popup.style.display = 'none';
     overlay.style.display = 'none';
 }
 
-
 loginBtn.addEventListener('click', openPopup);
-
-
 overlay.addEventListener('click', closePopup);
+
+function openNav() {
+    menu.style.display = "block";
+}
+function closeNav() {
+    menu.style.display = "none";
+}
+btn.addEventListener('change',function() {
+    if (btn.checked) {
+        openNav();
+    } else {
+        closeNav();
+    }
+});
