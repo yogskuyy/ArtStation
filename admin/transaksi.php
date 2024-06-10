@@ -69,7 +69,7 @@ if ($_SESSION['email'] == null) {
 <body>
   <nav class="menu-container">
     <input type="checkbox" aria-label="Toggle menu" />
-    <img src="../Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px" style="margin-left: 60px;"/>
+    <img src="../Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px" style="margin-left: 70px;"/>
   </nav>
   <div class="conten">
     <button class="sidebar-toggle">&#9776;</button> 

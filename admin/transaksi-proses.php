@@ -28,7 +28,7 @@ if(isset($_POST['simpan'])) {
         echo "
             <script>
                 alert('Terjadi Kesalahan');
-                window.location = 'add-karya.php'
+                window.location = 'transaksi.php'
             </script>
         ";
     }
@@ -50,14 +50,14 @@ if(isset($_POST['simpan'])) {
         echo "
             <script>
                 alert('Data karya Berhasil Diubah');
-                window.location = 'list-karya.php';
+                window.location = 'transaksi.php';
             </script>
         ";
     }else {
         echo "
             <script>
                 alert('Terjadi Kesalahan');
-                window.location = 'listKarya-edit.php';
+                window.location = 'transaksi.php';
             </script>
         ";
     }

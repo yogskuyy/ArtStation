@@ -32,6 +32,7 @@ mysqli_close($koneksi);
     <style>
         h1 {
             color: #fff;
+            font-family: 'Arial', sans-serif; /* Atur font untuk h1 */
         }
         .logout button {
             background-color: transparent;
@@ -41,32 +42,35 @@ mysqli_close($koneksi);
             margin: 5px;
         }
         .widget-container {
-            display: flex;
+            display:flex;
             justify-content: space-around;
-            margin-top: 20px;
+            margin-top: 100px;
         }
         .widget {
-            background-color: #19376D;
+            background-color: cornflowerblue;
             color: #fff;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             width: 30%;
+            font-family: 'Arial', sans-serif; /* Atur font untuk widget */
         }
         .widget h3 {
             margin: 0;
             font-size: 24px;
+            font-family: 'Arial', sans-serif; /* Atur font untuk h3 dalam widget */
         }
         .widget p {
             margin: 10px 0 0;
-            font-size: 18px;
+            font-size: 60px;
+            font-family:fantasy /* Atur font untuk p dalam widget */
         }
     </style>
 </head>
 <body>
     <nav class="menu-container">
         <input type="checkbox" aria-label="Toggle menu" />
-        <img src="../Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px" style="margin-left: 60px;" />
+        <img src="../Asset/ARTSTATION (1920 x 1080 piksel).png" width="150px" height="70px" style="margin-left: 70px;" />
     </nav>
     <div class="conten">
         <button class="sidebar-toggle">&#9776;</button>
@@ -87,7 +91,7 @@ mysqli_close($koneksi);
     <div class="container">
         <main>
             <div class="sales">
-                <h1>Selamat Datang</h1>
+                <h1>Selamat Datang Admin</h1>
             </div>
             <div class="widget-container">
                 <div class="widget">

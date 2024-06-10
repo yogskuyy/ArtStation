@@ -26,6 +26,129 @@ if ($_SESSION['email'] == null) {
   <title>ArtStation-Admin</title>
   <link rel="stylesheet" href="../css/shop.css">
   <link rel="stylesheet" href="../css/dbstyle.css">
+  <style>
+    body {
+    background-color: #0B1F3A; /* Warna latar belakang body */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales {
+    text-align: center;
+}
+
+.sales h2 {
+    color: #19376D; /* Warna teks judul */
+    margin-bottom: 20px;
+}
+
+#toggle-sales {
+    background-color: #19376D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#toggle-sales:hover {
+    background-color: #1452a5;
+}
+
+#add-artwork-form {
+    text-align: left;
+}
+
+#add-artwork-form div {
+    margin-bottom: 15px;
+}
+
+#add-artwork-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #19376D;
+}
+
+#add-artwork-form input[type="text"],
+#add-artwork-form input[type="number"],
+#add-artwork-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#add-artwork-form input[type="text"]:focus,
+#add-artwork-form input[type="number"]:focus,
+#add-artwork-form input[type="file"]:focus {
+    border-color: #19376D;
+    outline: none;
+}
+
+#add-artwork-form button[type="submit"] {
+    background-color: #19376D;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#add-artwork-form button[type="submit"]:hover {
+    background-color: #1452a5;
+}
+
+#add-artwork-form img {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    #add-artwork-form label {
+        font-size: 14px;
+    }
+
+    #add-artwork-form input[type="text"],
+    #add-artwork-form input[type="number"],
+    #add-artwork-form input[type="file"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #add-artwork-form button[type="submit"] {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+  </style>
 </head>
 <body>
   <nav class="menu-container">
